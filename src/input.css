@@ -1,0 +1,21 @@
+@tailwind base; 
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: Cubic_11;
+        src: 
+        /* local(Cubic_11), */
+        url(Cubic_11/fonts/web/Cubic_11_1.013_R.woff) format('woff')
+    }
+    
+    body{
+        font-family: Cubic_11;
+    }
+}
+
+/* @font-face {
+    font-family: ;
+    src: url(../dist/Cubic_11/fonts/web/Cubic_11_1.013_R.woff);
+} */
