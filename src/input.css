@@ -15,7 +15,24 @@
     }
 }
 
-/* @font-face {
-    font-family: ;
-    src: url(../dist/Cubic_11/fonts/web/Cubic_11_1.013_R.woff);
-} */
+@layer utilities{
+    .btn{
+        @apply text-center bg-[#FFE600] w-[116px] h-[50px] flex justify-center items-center
+    }
+    .choose-font{
+        -webkit-text-stroke: 2px #FF392D;
+        text-stroke: 2px #FF392D;  
+        @apply text-center 2xl:text-[40px]
+    }
+    .stroke-hover{
+        -webkit-text-stroke: 2px #FF392D;
+        text-stroke: 2px #FF392D;  
+    }
+    .stroke-F2E{
+        -webkit-text-stroke: 3px white;
+        text-stroke: 3px white;  
+    }
+    .stroke-black{
+        filter: drop-shadow(8px 8px 0px rgba(0, 0, 0, 1));
+    }
+}

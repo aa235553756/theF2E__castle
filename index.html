@@ -4,27 +4,240 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <title>The F2E week1</title>
 </head>
-<body class="bg-[url(images/bg.png)]">
-  <main class="container max-w-[1280px] mx-auto">
-    <section class="h-screen relative bg-black">
-        <header class="h-[80px] bg-lime-100"></header>
-        <div class="relative mt-11 mx-10 border-[12px] border-white rounded-[33px]">
-            <h1 class="xl:text-[200px] md:text-[112px] text-[42px] leading-[233px] text-white text-center">The F2E 4th</h1>
+<body class="">
+  <header class="h-[80px] bg-black font-sans">
+    <div class=" container max-w-[1328px] flex items-center justify-between">
+      <a class="block py-7" href=""><img src="./dist/images/image 1.png" alt=""></a>
+      <ul class="flex space-x-4 items-center">
+        <li><a class="block py-7 text-white" href="">關卡資訊</a></li>
+        <li><a class="block py-7 text-white" href="">攻略資源</a></li>
+        <li><a class="block py-7 text-white" href="">求職專區</a></li>
+        <li><a class="btn" href="">註冊報名</a></li>
+        <li><a class="btn" href="">登入</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <!-- 亂碼背景區 第一部分 -->
+    <div class="bg-[url(images/bg.png)]">
+      <div class="container max-w-[1328px] mx-auto">
+        <section id="castle" class="h-[calc(100vh-80px)] pt-11 top-0 relative bg-black">
+          <!-- header -->
+          <!-- The F2E大標題 -->
+          <div class="relative mx-10 border-[12px] border-white rounded-[33px]">
+            <h1 class="2xl:text-[200px] md:text-[112px] text-[42px] 2xl:leading-[233px] text-white text-center">The F2E 4th</h1>
             <span class="absolute text-white bg-black py-5 -bottom-10 right-10 text-5xl">互動式網頁設計</span>
           </div>
-        <img class="absolute bottom-0 w-full" src="./dist/images/城堡 2.png" alt="">
-        <img class="absolute bottom-0 right-[15%] top-1/3" src="./dist/images/fire.gif" alt="" width="256px">
-        <img class="absolute bottom-1/3 left-1/4" src="./dist/images/fire.gif" alt=""  width="256px">
-        <img class="absolute bottom-0 right-1/4" src="./dist/images/fire.gif" alt="" width="256px">
-        <div class="mb-14 py-4 absolute top-[55%] bg-white w-full bg-opacity-70">
-          <img class="mx-auto" src="./dist/images/1102.gif" alt="">
+          <!-- Castle -->
+          <img class="absolute bottom-0 w-full lg:h-[62vh] object-cover object-top" src="./dist/images/城堡 2.png" alt="">
+          <!-- 三個火焰 -->
+          <!-- <img class="absolute bottom-0 right-[15%] top-1/3" src="./dist/images/fire.gif" alt="" width="256px">
+          <img class="absolute bottom-1/3 left-1/4" src="./dist/images/fire.gif" alt=""  width="256px">
+          <img class="absolute bottom-0 right-1/4" src="./dist/images/fire.gif" alt="" width="256px"> -->
+          <!-- F2E攻擊村莊 -->
+          <!-- <div class="mb-14 py-4 absolute top-[50%] bg-white w-full bg-opacity-70">
+            <img class="mx-auto" src="./dist/images/1102.gif" alt="">
+          </div> -->
+          <!-- 勇者 -->
+          <img id="mainCharacter" class="z-10 absolute bottom-0 left-[50%] translate-x-[-50%]" src="./dist/images/勇者001-1.gif" alt="">
+          <!-- 空白鍵盤開始 -->
+          <!-- <p class="text-5xl text-white absolute bottom-0 mb-[140px] w-full text-center">請按空白鍵開始</p> -->
+        </section>
+        <section id="load" class="h-screen bg-lime-400 relative overflow-hidden">
+          <!-- 道路img -->
+          <img class="h-3/5 w-full" src="./dist/images/glass 1.png" alt="">
+          <img class="h-2/5 w-full scale-150" src="./dist/images/glass 1.png" alt="">
+          <!-- 青紫NPC,gif -->
+          <img class="absolute bottom-[10%] left-[50%] translate-x-[-50%]" width="124px" height="124px" src="/dist/images/青紫のエイリアン-1.gif" alt="">
+          <!-- 轉場 -->
+          <div id="transition" class="bg-white absolue top-0 w-full h-screen"></div>
+        </section>
+        <section id="npcDialogue" class="h-screen relative">
+          <!-- 道路img -->
+          <img class="w-full h-screen" src="./dist/images/glass 1.png" alt="">
+          <!-- 三隻怪物 -->
+          <div class="w-full flex justify-evenly absolute top-[20vh]">
+            <!-- 每一次點擊動畫結束後更換圖片 -->
+            <img class="" src="./dist/images/青紫のエイリアン-1.gif" alt="" width="324px" height="324px">
+            <!-- <img class="" src="./dist/images/青紫のエイリアン-1.gif" alt="" width="324px" height="324px">
+            <img class="" src="./dist/images/青紫のエイリアン-1.gif" alt="" width="324px" height="324px"> -->
+          </div>
+          <!-- 對話框 -->
+          <div class="max-w-[calc(1200px-24px)] absolute bottom-10 center left-1/2 translate-x-[-50%] w-full bg-black text-white ring-[12px] ring-white rounded-[32px]">
+            <!-- (1) -->
+            <div class="h-[246px] hidden ml-20  flex-col justify-center text-[40px]"> 
+              <p>怪物A:羨慕別人的酷酷網頁動畫？</p>
+              <p>怪物B:滿足不了同事的許願？</p>
+              <p>怪物C:動畫技能樹太雜無從下手？</p>
+            </div>
+            <!-- (2) -->
+            <div class="h-[246px] ml-20 mr-20  flex flex-col justify-center text-[40px] space-y-4"> 
+              <a class="px-5 py-2 hover:bg-[#8B8B8B]">逃跑</a>
+              <a class="px-5 py-2 hover:bg-[#8B8B8B]">應戰</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- 點擊應戰後(發亮) 選擇角色區 -->
+    <section class="w-full h-screen bg-black">
+      <!-- 兩層閃電圖以防畫面過長，可以考慮用gsap上下動 -->
+      <div class="flex  h-screen justify-between overflow-hidden">
+        <div>
+          <img src="./dist/images/kaminari.png" alt="">
+          <img src="./dist/images/kaminari.png" alt="">
         </div>
-        <p class="text-5xl text-white relative top-[40%] text-center">請按空白鍵開始</p>
-      </section>
-      <section class="h-screen bg-lime-400">
-
-      </section>
+        <!-- 角色選擇畫面 -->
+        <div id="chooseBackground" class="bg-black h-screen max-w-[1200px] w-full">
+          <h2 class="text-[#FFE600] 2xl:text-[120px] text-[80px] 2xl:mt-10 2xl:mb-14 mb-6 text-center">互動式網頁設計</h2>
+          <div class="flex justify-evenly">
+            <!-- 選擇你的腳色 -->
+            <div>
+              <div class="2xl:w-[558px] 2xl:h-[468px] w-[450px] h-[375px] mb-8">
+                <img id="yourChoice" class="2xl:w-[558px] 2xl:h-[468px] w-[450px] h-[375px]" src="./dist/images/unknown.gif" alt="">
+              </div>
+              <p id="yourChoiceText" class="2xl:text-[64px] text-[48px] text-center text-white">選擇你的角色</p>
+            </div>
+            <!-- 選擇欄 -->
+            <div class="w-[558px] h-[468px]">
+              <h3 class="choose-font text-[#FFEF5B] mb-4 leading-[1.2] text-[32px]">CHOOSE A FIGHTER</h3>
+              <!-- UI -->
+              <div class="mb-4">
+                <h4 class="choose-font text-white mb-4 leading-[1.2] text-[28px]">UI設計師</h4>
+                <div class="flex justify-center">
+                  <div class="overflow-hidden border-[8px] border-r-0 border-white">
+                    <img class="characterImg grayscale-[1]" src="./dist/images/UI新手sm.png" alt="">
+                  </div>
+                  <div class="overflow-hidden border-[8px] border-r-0 border-white">
+                    <img class="characterImg grayscale-[1]" src="./dist/images/UI設計sm.png" alt="">
+                  </div>
+                  <div class="overflow-hidden border-[8px] border-white">
+                    <img class="characterImg grayscale-[1]" src="./dist/images/UI生物sm.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- 前端 -->
+              <div>
+                <h4 class="choose-font text-white mb-4 leading-[1.2] text-[28px]">前端</h4>
+                <div class="flex justify-center">
+                  <div class="overflow-hidden border-[8px] border-r-0 border-white">
+                    <img class="characterImg grayscale-[1]" src="./dist/images/前端新手sm.png" alt="">
+                  </div>
+                  <div class="overflow-hidden border-[8px] border-r-0 border-white">
+                    <img class="characterImg grayscale-[1]" src="./dist/images/前端工程sm.png" alt="">
+                  </div>
+                  <div class="overflow-hidden border-[8px] border-white">
+                    <img class="characterImg grayscale-[1]" src="./dist/images/前端生物sm.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="./dist/images/kaminari.png" alt="">
+          <img src="./dist/images/kaminari.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- 年度最強主題 -->
+    <section class="h-screen bg-black relative overflow-hidden">
+      <!-- F2E文字跑馬燈 -->
+      <div class="w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <div class="ml-auto w-[87%] overflow-hidden">
+        <ul id="loop" class="text-[96px] inline-block leading-[1.2] whitespace-nowrap stroke-F2E">
+          <li>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+            <span> THE F2E THE F2E THE F2E THE F2E</span>
+          </li>
+        </ul>
+      </div>
+      <!-- 年度主視覺 -->
+      <div class="w-full absolute top-0 z-10">
+        <h2 class="mt-16 mb-[42px] text-[#FFE600] stroke-black leading-[1.2] 2xl:text-[150px] text-[80px] text-center z-10">年度最強合作<br>三大主題來襲</h2>
+        <ul class="space-y-[48px]">
+          <li class="2xl:text-[42px] text-3xl text-center">The F2E 活動網站設計</li>
+          <li class="2xl:text-[42px] text-3xl text-center">今晚，我想來點點簽</li>
+          <li class="2xl:text-[42px] text-3xl text-center">Scrum 新手村</li>
+        </ul>
+        <img class="absolute top-[5vh] left-1/2 translate-x-[-50%] -z-10 2xl:w-[811px] w-[630px]" src="./dist/images/Ellipse 2 1.png" alt="">
+      </div>
+      <!-- 六角,洧杰老師 -->
+      <div class="flex w-full justify-around absolute bottom-0 z-10">
+        <div class="flex items-center">
+          <img src="./dist/images/hex.png" alt="" width="320px">
+        </div>
+        <div class="relative">
+          <img  class="translate-x-[20%]" src="./dist/images/teacher.png" alt="" width="413px">
+          <img class="absolute top-[20%] right-[15%]" src="./dist/images/shine.gif" alt="" width="106px">
+        </div>
+      </div>
+    </section>
   </main>
+  
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+  <script src="all.js"></script>
 </body>
 </html>
