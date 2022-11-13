@@ -803,8 +803,8 @@ body{
   margin-bottom: 3.5rem;
 }
 
-.mb-\[140px\] {
-  margin-bottom: 140px;
+.mb-\[60px\] {
+  margin-bottom: 60px;
 }
 
 .ml-20 {
@@ -841,6 +841,10 @@ body{
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
 }
 
 .box-border {
@@ -959,20 +963,20 @@ body{
   height: 246px;
 }
 
-.h-\[468px\] {
-  height: 468px;
-}
-
-.h-\[250px\] {
-  height: 250px;
-}
-
 .h-\[375px\] {
   height: 375px;
 }
 
+.h-\[468px\] {
+  height: 468px;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-\[450px\] {
+  width: 450px;
 }
 
 .w-\[558px\] {
@@ -981,22 +985,6 @@ body{
 
 .w-\[87\%\] {
   width: 87%;
-}
-
-.w-\[300px\] {
-  width: 300px;
-}
-
-.w-\[450px\] {
-  width: 450px;
-}
-
-.w-\[560px\] {
-  width: 560px;
-}
-
-.w-\[600px\] {
-  width: 600px;
 }
 
 .w-\[630px\] {
@@ -1531,22 +1519,16 @@ body{
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-\[36px\] > :not([hidden]) ~ :not([hidden]) {
+.space-y-\[48px\] > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(36px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(36px * var(--tw-space-y-reverse));
+  margin-top: calc(48px * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(48px * var(--tw-space-y-reverse));
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-\[48px\] > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(48px * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(48px * var(--tw-space-y-reverse));
 }
 
 .space-y-reverse > :not([hidden]) ~ :not([hidden]) {
@@ -2192,20 +2174,8 @@ body{
   font-size: 80px;
 }
 
-.text-\[64px\] {
-  font-size: 64px;
-}
-
-.text-\[24px\] {
-  font-size: 24px;
-}
-
-.text-\[96px\] {
-  font-size: 96px;
-}
-
-.text-\[150px\] {
-  font-size: 150px;
+.text-\[48px\] {
+  font-size: 48px;
 }
 
 .text-\[32px\] {
@@ -2216,18 +2186,8 @@ body{
   font-size: 28px;
 }
 
-.text-\[48px\] {
-  font-size: 48px;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-\[96px\] {
+  font-size: 96px;
 }
 
 .text-3xl {
@@ -2797,6 +2757,10 @@ body{
 }
 
 @media (min-width: 1440px) {
+  .\32xl\:mb-\[140px\] {
+    margin-bottom: 140px;
+  }
+
   .\32xl\:mt-10 {
     margin-top: 2.5rem;
   }
